@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    /* CSS for background */
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0,0,0,0.60)), url(backgroundmain.gif); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar{
+    /* CSS for navbar */
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    /* CSS for navbar animation */
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #4F8FBD;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    /* CSS for content in website */
+    width: 100%;
+    position: static;
+    top: 50%;
+    transform: translateY(-50);
+    text-align: center;
+    color: #fff;
+}
+
+/* CSS for the text in content */
+.content h1{
+    font-size: 70px;
+    margin-top: 80px; 
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* CSS for button */
+.button {
+    background-color: #4F8FBD;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* CSS for button animation */
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: left 0.3s ease;
+  }
+  
+  .button:hover::before {
+    left: 0;
+  }
+
+.container1{
+    /* CSS for container */
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-image: url(WCTWS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container2{
+    
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-image: url(TheCall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container3{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-image: url(aboutfr.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container4{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-image: url(joinur.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text {
+    /* CSS for text in the container */
+    text-align: center;
+    color: #fff;
+}
+
+.image {
+    /* CSS for image in container*/
+    width: 550px;
+    height: 300px;
+}
+
+/* CSS for footer */
+.footer {
+    background-color: transparent;
+    padding: 20px;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0,0,0,0.60)), url(backgroundmain.gif);
+    text-align: center;
+    background-size: cover;
+}
+
+/* CSS for footer adjustments */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-buttons {
+    margin-top: 20px;
+}
+
